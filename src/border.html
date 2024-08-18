@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="sticky top-0 bg-gradient-to-r from-green-400 to-blue-500 box-decoration-clone border-b-2 sm:bg-gradient-to-r sm:from-purple-400 sm:to-pink-500 md:bg-gradient-to-r md:from-red-400 md:to-yellow-500 lg:bg-gradient-to-r lg:from-indigo-400 lg:to-teal-500 xl:bg-gradient-to-r xl:from-orange-400 xl:to-cyan-500"
+    >
+      <div class="container mx-auto py-5 sm:flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-center text-white">
+          Belajar Tailwind
+        </h1>
+        <ul
+          class="flex flex-wrap justify-center mt-5 space-x-5 text-white sm:mt-0 sm:text-sm md:text-base lg:space-x-10"
+        >
+          <li><a href="../src/layout.html">Layout</a></li>
+          <li><a href="../src/typography.html">Typography</a></li>
+          <li><a href="../src/table.html">Table</a></li>
+          <li><a href="../src/filters.html">Filter</a></li>
+          <li><a href="../src/transform.html">Transform</a></li>
+          <li><a href="../src/border.html">Border</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 bg-cover bg-center bg-no-repeat bg-[url('https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830027.jpg?w=740&t=st=1724022423~exp=1724023023~hmac=f087d1a34842ddbdba68707590ea8c5301505f7cb60fabdae460eb60650ff9ee')]"
+    >
+      <!-- Border Examples -->
+      <div class="p-4 mb-6 border-4 border-dashed border-blue-500 rounded-lg">
+        <h1 class="text-lg font-semibold text-blue-600">
+          Border Dashed with Radius
+        </h1>
+        <p class="text-gray-700">
+          Dashed border, specific border color, and rounded corners.
+        </p>
+      </div>
+
+      <!-- Outline Examples -->
+      <div
+        class="p-4 mb-6 outline-2 outline-red-500 outline-dotted outline-offset-4"
+      >
+        <h1 class="text-lg font-semibold text-red-600">Outlined with Offset</h1>
+        <p class="text-gray-700">
+          Dotted outline, specific outline color, and an outline offset.
+        </p>
+      </div>
+
+      <!-- Ring Examples -->
+      <div
+        class="p-4 mb-6 ring-4 ring-green-500 ring-offset-4 ring-offset-yellow-200"
+      >
+        <h1 class="text-lg font-semibold text-green-600">Ring with Offset</h1>
+        <p class="text-gray-700">
+          Ring, specific ring color, and a ring offset with a custom color.
+        </p>
+      </div>
+
+      <!-- Divide Examples -->
+      <div class="space-y-4 divide-y-4 divide-gray-400 divide-dotted">
+        <div class="p-4">
+          <h1 class="text-lg font-semibold text-gray-800">
+            Divide Style Dotted
+          </h1>
+          <p class="text-gray-700">Dotted divider line between sections.</p>
+        </div>
+        <div class="p-4">
+          <h1 class="text-lg font-semibold text-gray-800">
+            Next
+          </h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

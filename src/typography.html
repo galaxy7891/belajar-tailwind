@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-100 antialiased">
+    <div
+      class="sticky top-0 bg-gradient-to-r from-green-400 to-blue-500 box-decoration-clone border-b-2 sm:bg-gradient-to-r sm:from-purple-400 sm:to-pink-500 md:bg-gradient-to-r md:from-red-400 md:to-yellow-500 lg:bg-gradient-to-r lg:from-indigo-400 lg:to-teal-500 xl:bg-gradient-to-r xl:from-orange-400 xl:to-cyan-500"
+    >
+      <div class="container mx-auto py-5 sm:flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-center text-white">
+          Belajar Tailwind
+        </h1>
+        <ul
+          class="flex flex-wrap justify-center mt-5 space-x-5 text-white sm:mt-0 sm:text-sm md:text-base lg:space-x-10"
+        >
+          <li><a href="../src/layout.html">Layout</a></li>
+          <li><a href="../src/typography.html">Typography</a></li>
+          <li><a href="../src/table.html">Table</a></li>
+          <li><a href="../src/filters.html">Filter</a></li>
+          <li><a href="../src/transform.html">Transform</a></li>
+          <li><a href="../src/border.html">Border</a></li>
+        </ul>
+      </div>
+    </div>
+    <main class="p-6">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
+        >
+          <h2
+            class="text-5xl font-bold italic text-gray-800 mb-4 underline underline-offset-4 decoration-indigo-500 decoration-wavy decoration-2"
+          >
+            Title 1
+          </h2>
+          <ul
+            class="list-disc list-inside mb-4 text-sm text-justify text-gray-600 font-sans leading-relaxed"
+          >
+            <li class="hyphens-auto break-words">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li class="hyphens-auto break-words">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li class="hyphens-auto break-words">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </li>
+          </ul>
+          <p
+            class="text-xs font-normal text-left indent-4 mb-4 text-gray-600 line-clamp-3 truncate"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <button
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg self-end"
+          >
+            Read More
+          </button>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center font-serif"
+        >
+          <h2
+            class="text-xl font-semibold font-serif text-cyan-500 mb-4 underline underline-offset-4 decoration-indigo-500 decoration-dotted decoration-2"
+          >
+            Title 2
+          </h2>
+          <ul class="mb-4 text-sm text-justify text-cyan-500 leading-relaxed">
+            <li class="hyphens-auto break-words">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li class="hyphens-auto break-words">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li class="hyphens-auto break-words">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </li>
+          </ul>
+          <p
+            class="text-xs font-normal text-left indent-4 mb-4 text-gray-600 line-clamp-3 overflow-ellipsis"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <button
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg self-end align-bottom"
+          >
+            Read More
+          </button>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center font-mono text-cyan-200"
+        >
+          <h2
+            class="text-sm font-light mb-4 text-teal-500 underline underline-offset-4 decoration-indigo-500 decoration-dashed decoration-2"
+          >
+            Title 3
+          </h2>
+          <ul
+            class="list-none mb-4 text-sm text-justify leading-relaxed text-teal-500"
+          >
+            <li
+              class="before:content-['→'] before:mr-2 hyphens-auto break-words"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li
+              class="before:content-['→'] before:mr-2 hyphens-auto break-words"
+            >
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li
+              class="before:content-['→'] before:mr-2 hyphens-auto break-words"
+            >
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </li>
+          </ul>
+          <p
+            class="text-xs font-normal text-left indent-4 mb-4 text-gray-600 line-clamp-3 whitespace-normal break-words"
+          >
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <button
+            class="bg-indigo-600 text-white px-6 py-2 rounded-lg self-end align-top"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Belajar Tailwind</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div
+      class="sticky top-0 bg-gradient-to-r from-green-400 to-blue-500 box-decoration-clone border-b-2 sm:bg-gradient-to-r sm:from-purple-400 sm:to-pink-500 md:bg-gradient-to-r md:from-red-400 md:to-yellow-500 lg:bg-gradient-to-r lg:from-indigo-400 lg:to-teal-500 xl:bg-gradient-to-r xl:from-orange-400 xl:to-cyan-500"
+    >
+      <div class="container mx-auto py-5 sm:flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-center text-white">
+          Belajar Tailwind
+        </h1>
+        <ul
+          class="flex flex-wrap justify-center mt-5 space-x-5 text-white sm:mt-0 sm:text-sm md:text-base lg:space-x-10"
+        >
+          <li><a href="../src/layout.html">Layout</a></li>
+          <li><a href="../src/typography.html">Typography</a></li>
+          <li><a href="../src/table.html">Table</a></li>
+          <li><a href="../src/filters.html">Filter</a></li>
+          <li><a href="../src/transform.html">Transform</a></li>
+          <li><a href="../src/border.html">Border</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Filter Examples -->
+    <h3 class="mb-3 text-xl font-semibold text-center bg-orange-50">
+      Blur, Brightness, Contrast
+    </h3>
+    <div
+      class="grid w-1/2 gap-4 my-5 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <img class="blur-2xl" src="../public/images/1.png" alt="Blurred Image" />
+      <img
+        class="brightness-125"
+        src="../public/images/1.png"
+        alt="Brightened Image"
+      />
+      <img
+        class="contrast-200"
+        src="../public/images/1.png"
+        alt="High Contrast Image"
+      />
+    </div>
+
+    <h3 class="mb-3 text-xl font-semibold text-center bg-orange-50">
+      Grayscale, Hue-Rotate, Invert
+    </h3>
+    <div
+      class="grid w-1/2 gap-4 my-5 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <img
+        class="grayscale"
+        src="../public/images/1.png"
+        alt="Grayscale Image"
+      />
+      <img
+        class="hue-rotate-90"
+        src="../public/images/1.png"
+        alt="Hue Rotated Image"
+      />
+      <img class="invert" src="../public/images/1.png" alt="Inverted Image" />
+    </div>
+
+    <h3 class="mb-3 text-xl font-semibold text-center bg-orange-50">
+      Saturate, Sepia, Backdrop Blur
+    </h3>
+    <div
+      class="grid w-1/2 gap-4 my-5 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <img
+        class="saturate-150"
+        src="../public/images/1.png"
+        alt="Saturated Image"
+      />
+      <img class="sepia" src="../public/images/1.png" alt="Sepia Image" />
+      <img
+        class="backdrop-blur-sm bg-white/30"
+        src="../public/images/1.png"
+        alt="Backdrop Blur Image"
+      />
+    </div>
+  </body>
+</html>

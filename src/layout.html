@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Sticky Navbar -->
+    <div
+      class="sticky top-0 bg-gradient-to-r from-green-400 to-blue-500 box-decoration-clone border-b-2 sm:bg-gradient-to-r sm:from-purple-400 sm:to-pink-500 md:bg-gradient-to-r md:from-red-400 md:to-yellow-500 lg:bg-gradient-to-r lg:from-indigo-400 lg:to-teal-500 xl:bg-gradient-to-r xl:from-orange-400 xl:to-cyan-500"
+    >
+      <div class="container mx-auto py-5 sm:flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-center text-white">
+          Belajar Tailwind
+        </h1>
+        <ul
+          class="flex flex-wrap justify-center mt-5 space-x-5 text-white sm:mt-0 sm:text-sm md:text-base lg:space-x-10"
+        >
+          <li><a href="../src/layout.html">Layout</a></li>
+          <li><a href="../src/typography.html">Typography</a></li>
+          <li><a href="../src/table.html">Table</a></li>
+          <li><a href="../src/filters.html">Filter</a></li>
+          <li><a href="../src/transform.html">Transform</a></li>
+          <li><a href="../src/border.html">Border</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Floating Image Section -->
+    <div class="container mx-auto mt-10 p-4">
+      <div class="bg-orange-100 p-5 rounded-lg">
+        <div class="float-left mr-4 mb-4">
+          <img
+            src="../public/images/adudu.jpeg"
+            alt="Image"
+            class="rounded-full"
+          />
+        </div>
+        <div>
+          <h2 class="text-lg font-bold">Penggunaan Floating Image</h2>
+          <p>Image use float-left</p>
+        </div>
+        <div class="clear-both mt-4">
+          <p class="visible">
+            Teks use clear-both, dibawah teks ini ada teks invisible
+          </p>
+          <p class="invisible">
+            This text is invisible, but it still takes up space.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aspect Ratio Section -->
+    <h3 class="mb-3 text-3xl font-bold text-center">Aspect Ratio</h3>
+    <div
+      class="container mx-auto mt-10 p-4 columns-1 sm:columns-2 lg:columns-3 gap-4"
+    >
+      <div
+        class="break-inside-avoid bg-white p-5 shadow-lg mb-4 transition-transform transform hover:scale-105 hover:shadow-lg"
+      >
+        <h2 class="text-lg font-bold mb-2 bg-clip-border border-dashed">
+          Column 1
+        </h2>
+        <a href="https://www.youtube.com/watch?v=CyU5aMY4BUA" target="_blank">
+          <iframe
+            src="https://www.youtube.com/embed/CyU5aMY4BUA"
+            title="YouTube video"
+            class="aspect-square rounded-lg mx-auto pointer-events-none"
+            allowfullscreen
+          ></iframe>
+        </a>
+        <button
+          class="mt-2 bg-sky-500 hover:bg-sky-700 px-4 py-2 rounded-md text-white flex justify-center mx-auto"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div
+        class="break-inside-avoid p-5 bg-cyan-200 shadow-lg shadow-cyan-500/50 mb-4"
+      >
+        <h2 class="text-lg font-bold mb-2">Column 2</h2>
+        <iframe
+          src="https://www.youtube.com/embed/CyU5aMY4BUA"
+          title="YouTube video"
+          class="aspect-square rounded-lg mx-auto"
+          allowfullscreen
+        ></iframe>
+        <button
+          class="mt-2 bg-sky-500 hover:bg-sky-700 px-4 py-2 cursor-progress rounded-md text-white flex justify-center mx-auto"
+        >
+          Saving
+        </button>
+      </div>
+
+      <div class="break-inside-avoid bg-indigo-500 opacity-25 p-5 mb-4">
+        <h2 class="text-lg font-bold mb-2">Column 3</h2>
+        <iframe
+          src="https://www.youtube.com/embed/CyU5aMY4BUA"
+          title="YouTube video"
+          class="aspect-square rounded-lg mx-auto"
+          allowfullscreen
+        ></iframe>
+        <button
+          class="mt-2 flex justify-center mx-auto bg-sky-500 disabled:bg-gray-400 disabled:cursor-not-allowed px-4 py-2 rounded-md text-white disabled:text-gray-600"
+          disabled
+        >
+          Confirm
+        </button>
+      </div>
+
+      <div class="break-inside-avoid mix-blend-luminosity bg-pink-400 p-5 mb-4">
+        <h2 class="text-lg font-bold mb-2">Column 4</h2>
+        <iframe
+          src="https://www.youtube.com/embed/CyU5aMY4BUA"
+          title="YouTube video"
+          class="aspect-square rounded-lg mx-auto"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="break-inside-avoid bg-blend-multiply bg-pink-400 p-5 mb-4">
+        <h2 class="text-lg font-bold mb-2">Column 5</h2>
+        <iframe
+          src="https://www.youtube.com/embed/CyU5aMY4BUA"
+          title="YouTube video"
+          class="aspect-square rounded-lg mx-auto"
+          allowfullscreen
+        ></iframe>
+        <button
+          class="mt-2 flex justify-center mx-auto px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+        >
+          Save Changes
+        </button>
+      </div>
+
+      <div class="break-inside-avoid bg-white p-5 drop-shadow-lg mb-4">
+        <h2 class="text-lg font-bold mb-2">Column 6</h2>
+        <iframe
+          src="https://www.youtube.com/embed/CyU5aMY4BUA"
+          title="YouTube video"
+          class="aspect-square rounded-lg mx-auto"
+          allowfullscreen
+        ></iframe>
+        <button
+          class="mt-2 bg-sky-500 transition duration-700 ease-in-out px-4 py-2 rounded-md text-white flex justify-center mx-auto"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <!-- Box Sizing & Content Box Section -->
+    <h3 class="mb-3 text-3xl font-bold text-center">
+      Box Sizing & Box Content
+    </h3>
+    <div class="container mx-auto mt-10 p-4">
+      <div
+        class="box-border p-4 border-4 border-blue-500 bg-white rounded-lg mb-4"
+      >
+        <h2 class="text-lg font-bold">Box Sizing: Border Box</h2>
+        <p>
+          The padding and border are included in the element's total width and
+          height.
+        </p>
+      </div>
+      <div class="box-content p-4 border-4 border-red-500 bg-white rounded-lg">
+        <h2 class="text-lg font-bold">Box Sizing: Content Box</h2>
+        <p>
+          The padding and border are not included in the element's total width
+          and height.
+        </p>
+      </div>
+    </div>
+
+    <!-- Object Fit and Object Position Section -->
+    <h3 class="mb-3 text-3xl font-bold text-center">
+      Object Fit and Object Position
+    </h3>
+    <div class="container mx-auto mt-10 p-4">
+      <div
+        class="w-full sm:w-64 h-64 bg-gray-200 overflow-hidden mx-auto rounded-lg"
+      >
+        <img
+          src="../public/images/adudu.jpeg"
+          alt="Placeholder"
+          class="object-cover object-center w-full h-full"
+        />
+      </div>
+    </div>
+
+    <!-- Overflow and Overscroll Behavior Section -->
+    <h3 class="mb-3 text-3xl font-bold text-center">
+      Overflow and Overscroll Behavior
+    </h3>
+    <div class="container mx-auto mt-10 p-4">
+      <div
+        class="w-full sm:w-64 h-64 bg-gray-200 overflow-hidden overflow-y-scroll overscroll-contain p-5 mx-auto rounded-lg"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+          vehicula mauris, ac elementum dolor rhoncus in. Integer tincidunt est
+          non erat ultricies, at ultricies lectus dapibus. Donec pharetra
+          elementum est, in aliquet libero facilisis ut. Quisque ac lacinia
+          lorem, sit amet laoreet felis.
+        </p>
+        <p>
+          Sed accumsan mauris sit amet leo hendrerit, nec iaculis erat vehicula.
+          Ut nec ultrices velit, nec consequat ipsum. Integer id tincidunt elit.
+          Proin vehicula nunc ut risus finibus, non gravida purus scelerisque.
+        </p>
+        <p>
+          Fusce vehicula risus in justo viverra, ac viverra turpis volutpat.
+          Duis luctus dictum velit a facilisis. Sed eget metus nec nunc
+          efficitur scelerisque. Etiam at dignissim odio, ut accumsan est.
+        </p>
+      </div>
+    </div>
+
+    <!-- Z-Index Section -->
+    <h3 class="mb-3 text-3xl font-bold text-center">Z-Index</h3>
+    <div class="container mx-auto mt-10 p-4">
+      <div class="relative w-64 h-64 bg-gray-200 mx-auto rounded-lg">
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-red-500 z-10 transform translate-x-4 translate-y-4"
+        ></div>
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-blue-500 z-20 transform translate-x-8 translate-y-8"
+        ></div>
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-green-500 z-30 transform translate-x-12 translate-y-12"
+        ></div>
+        <div
+          class="absolute top-0 left-0 w-32 h-32 bg-yellow-500 z-40 transform translate-x-16 translate-y-16"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
